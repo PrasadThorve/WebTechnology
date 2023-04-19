@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angular</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<!--     
+    
+    <form ng-app="">
+        <h1>Registration Form</h1>
+        <p>First Name: <input type="text" ng-model="fname"></p>
+        <p ng-bind="fname"></p>
+        <p>Last Name: <input type="text" ng-model="lname"></p>
+        <p ng-bind="lname"></p>
+        <p>Username: <input type="text" ng-model="username"></p>
+        <p ng-bind="username"></p>
+        <p>Password: <input type="text" ng-model="password"></p>
+        <p>{{password}}</p>
+    </form> -->
+
+    <div ng-app="">
+        First Name: <input type="text" ng-model="fname">
+        Last Name: <input type="text" ng-model="lname"><br>
+        Full Name: {{fname + " " + lname}}
+    </div>
+
+</body>
+</html>
